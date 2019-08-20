@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/reset.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Crystal Collector Game</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="javascript/game.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!--Fluid container-->
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Crystal Collector Game</h1>
+          <p class="lead">
+            You will be given a random number at the start of the game. There
+            are four crystals below. By clicking on a crystal you will add a
+            specific amount of points to your total score. You win the game by
+            matching your total score to random number, you lose the game if
+            your total score goes above the random number. The value of each
+            crystal is hidden from you until you click on it. Each time the game
+            starts,the game will change the values of each crystal.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+            <div class="card-header">
+              The Game
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Wins:</li>
+              <li class="list-group-item">Loses:</li>
+              <li class="list-group-item">Number:</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-4"></div>
+        <!--total score-->
+        <div class="col-4">
+          <div
+            class="card text-white bg-primary mb-3"
+            style="max-width: 18rem;"
+          >
+            <div class="card-header">Your total score:</div>
+            <div class="card-body">
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--row for images-->
+      <div class="row">
+        <div class="card" style="width: 18rem;">
+          <img id="blue" src="images/Blue.jpg" class="card-img-top" alt="..." />
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img
+            id="green"
+            src="images/Green.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img
+            id="orange"
+            src="images/Orange.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img id="red" src="images/Red.jpg" class="card-img-top" alt="..." />
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img
+            id="purple"
+            src="images/Purple.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+        </div>
+      </div>
+
+      <!--fluid condtainer close-->
+    </div>
+  </body>
+</html>
