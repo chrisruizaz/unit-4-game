@@ -27,12 +27,14 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script src="javascript/game.js"></script>
+
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div class="container-fluid">
+      <!---->
       <!--Fluid container-->
+      <!---->
       <div class="jumbotron jumbotron-fluid">
         <div class="container">
           <h1 class="display-4">Crystal Collector Game</h1>
@@ -47,6 +49,9 @@
           </p>
         </div>
       </div>
+      <!---->
+      <!--game card-->
+      <!---->
       <div class="row">
         <div class="col-4">
           <div class="card" style="width: 18rem;">
@@ -54,27 +59,34 @@
               The Game
             </div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">Wins:</li>
-              <li class="list-group-item">Loses:</li>
-              <li class="list-group-item">Number:</li>
+              <li class="list-group-item">Wins: <span id="wins"></span></li>
+              <li class="list-group-item">Loses: <span id="loses"></span></li>
             </ul>
           </div>
         </div>
         <div class="col-4"></div>
+        <!---->
         <!--total score-->
+        <!---->
         <div class="col-4">
           <div
             class="card text-white bg-primary mb-3"
             style="max-width: 18rem;"
           >
-            <div class="card-header">Your total score:</div>
+            <div class="card-header" h1 class="display-3">
+              Your total score:
+            </div>
             <div class="card-body">
-              <p class="card-text"></p>
+              <p class="card-text">
+                Your New Number: <span id="newNumber"></span>
+              </p>
             </div>
           </div>
         </div>
       </div>
+      <!---->
       <!--row for images-->
+      <!---->
       <div class="row">
         <div class="card" style="width: 18rem;">
           <img id="blue" src="images/Blue.jpg" class="card-img-top" alt="..." />
@@ -107,8 +119,10 @@
           />
         </div>
       </div>
-
+      <!---->
       <!--fluid condtainer close-->
+      <!---->
     </div>
+    <script src="javascript/game.js"></script>
   </body>
 </html>
