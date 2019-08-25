@@ -68,105 +68,111 @@
     <!---->
     <!--game card-->
     <!---->
-    <div class="container">
-      <div class="row">
-        <div class="col-4">
-          <div class="card" style="width: 18rem;">
-            <div class="card-header">
-              The Game
+    <div class="bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <div class="card" style="width: 18rem;">
+              <div class="card-header">
+                The Game
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Wins: <span id="wins"></span></li>
+                <li class="list-group-item">Loses: <span id="loses"></span></li>
+              </ul>
             </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Wins: <span id="wins"></span></li>
-              <li class="list-group-item">Loses: <span id="loses"></span></li>
-            </ul>
+          </div>
+          <div class="col-4"></div>
+          <!---->
+          <!--total score-->
+          <!---->
+          <div class="col-4">
+            <div
+              class="card text-white bg-primary mb-3"
+              style="max-width: 18rem;"
+            >
+              <div class="card-header" h1 class="display-3">
+                Your total score: <span id="userScore"></span>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Your New Number: <span id="newNumber"></span>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-4"></div>
         <!---->
-        <!--total score-->
+        <!--row for images-->
         <!---->
-        <div class="col-4">
-          <div
-            class="card text-white bg-primary mb-3"
-            style="max-width: 18rem;"
-          >
-            <div class="card-header" h1 class="display-3">
-              Your total score: <span id="userScore"></span>
-            </div>
-            <div class="card-body">
-              <p class="card-text">
-                Your New Number: <span id="newNumber"></span>
-              </p>
+
+        <div class="row">
+          <div class="col-4">
+            <div class="card" style="width: 18rem;">
+              <img
+                id="blue"
+                src="images/Blue.jpg"
+                class="card-img-top"
+                alt="..."
+              />
             </div>
           </div>
+          <div class="col-4">
+            <div class="card" style="width: 18rem;">
+              <img
+                id="green"
+                src="images/Green.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card" style="width: 18rem;">
+              <img
+                id="orange"
+                src="images/Orange.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+          </div>
         </div>
-      </div>
-      <!---->
-      <!--row for images-->
-      <!---->
 
-      <div class="row">
-        <div class="col-4">
-          <div class="card" style="width: 18rem;">
-            <img
-              id="blue"
-              src="images/Blue.jpg"
-              class="card-img-top"
-              alt="..."
-            />
+        <div class="row">
+          <div class="col-4">
+            <div class="card" style="width: 18rem;">
+              <img
+                id="red"
+                src="images/Red.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
           </div>
-        </div>
-        <div class="col-4">
-          <div class="card" style="width: 18rem;">
-            <img
-              id="green"
-              src="images/Green.jpg"
-              class="card-img-top"
-              alt="..."
-            />
+          <div class="col-4">
+            <div class="card" style="width: 18rem;">
+              <img
+                id="purple"
+                src="images/Purple.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
           </div>
-        </div>
-        <div class="col-4">
-          <div class="card" style="width: 18rem;">
-            <img
-              id="orange"
-              src="images/Orange.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-4">
-          <div class="card" style="width: 18rem;">
-            <img id="red" src="images/Red.jpg" class="card-img-top" alt="..." />
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="card" style="width: 18rem;">
-            <img
-              id="purple"
-              src="images/Purple.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="card" style="width: 18rem;">
-            <img
-              id="white"
-              src="images/White.jpg"
-              class="card-img-top"
-              alt="..."
-            />
+          <div class="col-4">
+            <div class="card" style="width: 18rem;">
+              <img
+                id="white"
+                src="images/White.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
           </div>
         </div>
       </div>
     </div>
-
     <script src="javascript/game.js"></script>
   </body>
 </html>
