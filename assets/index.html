@@ -36,22 +36,39 @@
       <!--Fluid container-->
       <!---->
       <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h1 class="display-4">Crystal Collector Game</h1>
-          <p class="lead">
-            You will be given a random number at the start of the game. There
-            are four crystals below. By clicking on a crystal you will add a
-            specific amount of points to your total score. You win the game by
-            matching your total score to random number, you lose the game if
-            your total score goes above the random number. The value of each
-            crystal is hidden from you until you click on it. Each time the game
-            starts,the game will change the values of each crystal.
-          </p>
+        <div class="card bg-dark text-white">
+          <img
+            id="jumbotronImg"
+            src="images/cool-blue-crystal-background-image.jpg"
+            class="card-img"
+            class="img-responsive"
+            alt="..."
+          />
+          <div class="card-img-overlay">
+            <div class="container">
+              <h1 class="display-4">Crystal Collector Game</h1>
+              <p class="lead">
+                You will be given a random number at the start of the game.
+                There are four crystals below. By clicking on a crystal you will
+                add a specific amount of points to your total score. You win the
+                game by matching your total score to random number, you lose the
+                game if your total score goes above the random number. The value
+                of each crystal is hidden from you until you click on it. Each
+                time the game starts,the game will change the values of each
+                crystal.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-      <!---->
-      <!--game card-->
-      <!---->
+    </div>
+    <!---->
+    <!--fluid condtainer close-->
+    <!---->
+    <!---->
+    <!--game card-->
+    <!---->
+    <div class="container">
       <div class="row">
         <div class="col-4">
           <div class="card" style="width: 18rem;">
@@ -87,52 +104,69 @@
       <!---->
       <!--row for images-->
       <!---->
+
       <div class="row">
-        <div class="card" style="width: 18rem;">
-          <img id="blue" src="images/Blue.jpg" class="card-img-top" alt="..." />
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+            <img
+              id="blue"
+              src="images/Blue.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+          </div>
         </div>
-        <div class="card" style="width: 18rem;">
-          <img
-            id="green"
-            src="images/Green.jpg"
-            class="card-img-top"
-            alt="..."
-          />
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+            <img
+              id="green"
+              src="images/Green.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+          </div>
         </div>
-        <div class="card" style="width: 18rem;">
-          <img
-            id="orange"
-            src="images/Orange.jpg"
-            class="card-img-top"
-            alt="..."
-          />
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+            <img
+              id="orange"
+              src="images/Orange.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+          </div>
         </div>
       </div>
+
       <div class="row">
-        <div class="card" style="width: 18rem;">
-          <img id="red" src="images/Red.jpg" class="card-img-top" alt="..." />
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+            <img id="red" src="images/Red.jpg" class="card-img-top" alt="..." />
+          </div>
         </div>
-        <div class="card" style="width: 18rem;">
-          <img
-            id="purple"
-            src="images/Purple.jpg"
-            class="card-img-top"
-            alt="..."
-          />
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+            <img
+              id="purple"
+              src="images/Purple.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+          </div>
         </div>
-        <div class="card" style="width: 18rem;">
-          <img
-            id="white"
-            src="images/White.jpg"
-            class="card-img-top"
-            alt="..."
-          />
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+            <img
+              id="white"
+              src="images/White.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+          </div>
         </div>
       </div>
-      <!---->
-      <!--fluid condtainer close-->
-      <!---->
     </div>
+
     <script src="javascript/game.js"></script>
   </body>
 </html>

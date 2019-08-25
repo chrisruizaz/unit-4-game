@@ -97,7 +97,7 @@ function resetlose() {
   totalScore = 0;
   for (i = 0; i < totalStones.length; i++) {
     //gets easier with lose
-    newNumber += totalStones[randomIntFromInterval(0, totalStones.length - 1)];
+    newNumber = totalStones[randomIntFromInterval(0, totalStones.length - 1)];
   }
   document.getElementById("userScore").innerHTML = totalScore;
   document.getElementById("newNumber").innerHTML = newNumber;
@@ -107,7 +107,7 @@ function resetwin() {
   totalScore = 0;
   for (i = 0; i < totalStones.length; i++) {
     //gets harder with wins
-    newNumber = totalStones[randomIntFromInterval(0, totalStones.length - 1)];
+    newNumber += totalStones[randomIntFromInterval(0, totalStones.length - 1)];
   }
   document.getElementById("userScore").innerHTML = totalScore;
   document.getElementById("newNumber").innerHTML = newNumber;
