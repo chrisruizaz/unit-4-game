@@ -53,21 +53,27 @@ function gemSelected(x) {
 ////
 console.log("my game.js file is attached!");
 $("#blue").click(function() {
+  console.log("Blue");
   gemSelected(gemBlue);
 });
 $("#green").click(function() {
+  console.log("Green");
   gemSelected(gemGreen);
 });
 $("#orange").click(function() {
+  console.log("Orange");
   gemSelected(gemOrange);
 });
 $("#red").click(function() {
+  console.log("Red");
   gemSelected(gemRed);
 });
 $("#purple").click(function() {
+  console.log("Purple");
   gemSelected(gemPurple);
 });
 $("#white").click(function() {
+  console.log("White");
   gemSelected(gemWhite);
 });
 $(".card-text").append("<p></p>");
